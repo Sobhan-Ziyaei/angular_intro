@@ -1,0 +1,30 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+    <form class="col-12 col-md-6 col-lg-4 col-xl-2">
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="mb-2">City</label>
+        <input
+          type="text"
+          class="form-control border border-primary"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Filter By city"
+        />
+        <button class="btn btn-success" type="button">Search</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<section>
+  <form>
+    <input type="text" placeholder="Filter by city" />
+    <button class="btn btn-success" type="button">Search</button>
+  </form>
+</section>
+<section class="results">
+  <app-housing-location
+  *ngFor="let housingLocation of housingLocationList"
+    [housingLocation]="housingLocation"
+  ></app-housing-location>
+</section>
