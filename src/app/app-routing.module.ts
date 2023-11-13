@@ -7,13 +7,13 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Home page'
+    title: 'Home page',
   },
   {
-    path: 'details/:h',
+    path: 'details/:id',
     component: DetailsComponent,
-    title: 'Home details'
-  }
+    title: 'Home details',
+  },
 ];
 
 @NgModule({
